@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image:url("images/shouye.webp");
+}
+		
+#box {
+	width: 600px;
+	height: 600px;
+	background-color: white;
+	margin-left: 35%;
+	margin-top: 10%;
+	transform: translateY(-15%);
+	float: left;
+	border-radius: 15px;
+	opacity: 0.95;
+	font-size: 17px;
+}
+
+
+#box1 {
+	text-align: center;
+}
+
+#box3 {
+	margin-top: 120%;
+}
+
+#btn1 {
+	width: 100px;
+	border-style: inset;
+	border-radius: 30px;
+	color: white;
+	background-color: rgba(234, 203, 0, 0.8);
+	
+}
+
+#btn2 {
+	width: 100px;
+	border-radius: 30px;
+	border-style: inset;
+	color: aliceblue;
+	background-color: rgba(234, 203, 0, 0.8);
+}
+
+#input {
+	width: 200px;
+	border-top: 0;
+}

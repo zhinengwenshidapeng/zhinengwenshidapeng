@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能温室大棚管理操作页面</title>
+	<link rel="stylesheet" href="muban.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>智能温室管理系统</h1>
+            <nav>
+                <a href="denglu.html">登录/注册</a>
+                <a href="bangzhu.html">帮助</a>
+            </nav>
+        </header>
+        <aside class="sidebar">
+            <ul>
+				<li><a href="shouye.html">首页</a></li>
+                <li><a href="huanjing.html">环境监控</a></li>
+                <li><a href="kongzhi.html">自动控制</a></li>
+                <li><a href="shuju.html">数据分析</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <center><h2>实时环境监控</h2>
+			<p>光照强度：<span id="lightIntensity">加载中...</span>℃</p>
+            <p>大棚温度：<span id="temperature1">加载中...</span>%</p>
+            <p>大棚湿度：<span id="humidity1">加载中...</span>%</p>
+            <p>ph值：<span id="ph">加载中...</span></p>
+			<p>二氧化碳浓度：<span id="CarbonDioxide">加载中...</span>%</p>
+			</center>
+        </main>
+        <aside class="rightbar">
+            <div id="weather-container">
+			<h2>当前天气</h2>
+			<p id="weather-description"></p>
+			<p>温度: <span id="temperature"></span>°C</p>
+			<p>湿度: <span id="humidity"></span>%</p>
+    		</div>
+        </aside>
+    </div>
+	<script src="huanjing.js"></script>
+	<script src="weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自动控制</title>
+	<link rel="stylesheet" href="muban.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>智能温室管理系统</h1>
+            <nav>
+                <a href="shezhi1.html">登录/注册</a>
+                <a href="bangzhu.html">帮助</a>
+            </nav>
+        </header>
+        <aside class="sidebar">
+            <ul>
+				<li><a href="shouye.html">首页</a></li>
+                <li><a href="huanjing.html">环境监控</a></li>
+                <li><a href="kongzhi.html">自动控制</a></li>
+                <li><a href="shuju.html">数据分析</a></li>
+            </ul>
+        </aside>
+         <div id="control-panel">
+        <div class="control-section">
+            <h3>温度控制</h3>
+            <label for="temperature1">大棚温度 (°C):</label>
+            <input type="number" id="temperature1" value="25">
+            <button id="set-temperature1">设置温度</button>
+        </div>
+
+        <div class="control-section">
+            <h3>湿度控制</h3>
+            <label for="humidity1">大棚湿度 (%):</label>
+            <input type="number" id="humidity1" value="50">
+            <button id="set-humidity1">设置湿度</button>
+        </div>
+
+        <div class="control-section">
+            <h3>光照强度控制</h3>
+            <label for="light">光照强度 (Lux):</label>
+            <input type="number" id="light" value="1000">
+            <button id="set-light">设置光照强度</button>
+        </div>
+
+        <div class="control-section">
+            <h3>pH值控制</h3>
+            <label for="ph">pH值:</label>
+            <input type="number" id="ph" value="6.5">
+            <button id="set-ph">设置pH值</button>
+        </div>
+			 
+	    <div class="control-section">
+            <h3>二氧化碳浓度控制</h3>
+            <label for="co2">二氧化碳浓度 (ppm):</label>
+            <input type="number" id="co2" value="400">
+            <button id="set-co2">设置二氧化碳浓度</button>
+        </div>
+    </div>
+        <aside class="rightbar">
+            <!-- 在这里添加右侧信息栏的HTML -->
+            <div id="weather-container">
+			<h2>当前天气</h2>
+			<p id="weather-description"></p>
+			<p>温度: <span id="temperature"></span>°C</p>
+			<p>湿度: <span id="humidity"></span>%</p>
+    		</div>
+        </aside>
+    </div>
+	<script src="weather.js"></script>
+</body>
+</html>

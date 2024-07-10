@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系统设置</title>
+	<link rel="stylesheet" href="muban.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>智能温室管理系统</h1>
+            <nav>
+                <a href="shezhi1.html">登录/注册</a>
+                <a href="bangzhu.html">帮助</a>
+            </nav>
+        </header>
+        <aside class="sidebar">
+            <ul>
+				<li><a href="shouye.html">首页</a></li>
+                <li><a href="huanjing.html">环境监控</a></li>
+                <li><a href="kongzhi.html">自动控制</a></li>
+                <li><a href="shuju.html">数据分析</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section id="introduction">
+                <h1>欢迎来到智能温室大棚</h1>
+                <p>这里是关于智能温室大棚的简介。</p>
+            </section>
+    
+            <section id="products">
+                <h2>我们的产品</h2>
+                <div class="left">
+                    <div class="wrap">
+                        <div class="tile">
+                            <div class="text">
+                                <h1>应用领域广泛</h1>
+                                <img src="images/1.jpg">
+                                <h3 class="an-text">可以帮助各种不同种植物健康的生长</h3>
+                                <div class="dots"><span></span><span></span></div>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <div class="text">
+                                <h1>智能实现多项功能</h1>
+                                <img src="images/2.jpg">
+                                <h3 class="an-text">通过改变大棚内的各项阙值来保障植物更好的生长</h3>
+                                <div class="dots"><span></span><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="technology">
+                <h2>技术支持</h2>
+                <p> (1)温度传感器： <br>
+                    &nbsp&nbsp&nbsp DS18B20：一种数字温度传感器，具有温度范围宽、精度高等特点。 DHT11/DHT22：这些是温湿度复合传感器，适合同时监测温度和湿度。<br>
+                    (2)土壤湿度传感器：<br>
+                    &nbsp&nbsp&nbsp FC-28：一种常见的土壤湿度传感器，通过检测土壤的电阻来反映湿度。<br>
+                    &nbsp&nbsp&nbsp YL-69：另一种流行的土壤湿度传感器，通常与Arduino或其他微控制器兼容。<br>
+                    (3)光照传感器：<br>
+                    &nbsp&nbsp&nbsp BH1750：一种数字光照传感器，用于监测大棚内的光照强度。<br>
+                    &nbsp&nbsp&nbsp 光敏电阻：简单的光照传感器，通过电阻变化来感知光照。<br>
+                    (4)二氧化碳传感器：<br>
+                    &nbsp&nbsp&nbsp MH-Z14/MH-Z19：这些是用于监测二氧化碳浓度的传感器，对于控制大棚内的空气质量很有帮助。<br>
+                    (5)pH值传感器：<br>
+                    &nbsp&nbsp&nbsp SEN0161：一种用于监测土壤或水体的pH值的传感器。<br>
+                    &nbsp&nbsp&nbsp 在选择传感器时，需要考虑以下因素：<br>
+                    &nbsp&nbsp&nbsp 接口兼容性：确保传感器与龙芯系统的接口兼容，例如I2C、SPI、GPIO等。<br>
+                    &nbsp&nbsp&nbsp 测量范围和精度：选择适合温室大棚环境要求的传感器，确保其测量范围和精度满足需求。<br>
+                    &nbsp&nbsp&nbsp 环境适应性：传感器需要适应大棚内的温度、湿度等环境条件。<br>
+                    &nbsp&nbsp&nbsp 电源要求：考虑传感器的电源电压和功耗，确保系统能够提供稳定的电源。<br>
+                    &nbsp&nbsp&nbsp 在实际应用中，你可能需要根据龙芯系统的技术规格和传感器的具体要求来选择合适的型号，并进行必要的电路设计和软件编程，以实现数据的读取和控制逻辑的实现。
+                    </p>
+                <a href="kongzhi.html">了解更多</a>
+            </section>
+    
+            <section id="case">
+                <h2>大棚为我们带来了许多便利</h2>
+                <div class="case-study">
+                    <h3></h3>
+                    <p>&nbsp&nbsp&nbsp大棚能够控制温度，湿度和光照，为农作物提供最佳生长条件，无论是在冬季还是夏天都能保证农作物的持续生长，大棚还能防止病虫害的侵袭，进一步保障农作物的生长，为了使大棚能够更好的保障农作物的生长，实现高效智能的功能，智能温室大棚也要得到更多的应用和强化，来应对不同自然条件下的农作物的生长。</p>
+                </div>
+                <div class="case-study">
+                    <h3>主要技术特点</h3>
+                    <p>&nbsp&nbsp&nbsp检测环境中多个技能指标，通过配备相应的传感器，对温度，湿度，二氧化碳浓度等多项指标进行监测，然后通过手动设置多项阙值来对相应的问题进行相应的解决，例如当温度超过设置的温度后自动开启水泵降温，当光照强度低于设置的数值后，自动开启补光灯补灯，当二氧化碳浓度高于设置的值后，将自动开启通风口进行通风，当土壤湿度低于设置的值后，自动开启水泵加湿。并且每项指标高于或低于范围内时，还会触发报警装置。</p>
+                </div>
+            </section>
+        </main>
+      
+            <aside class="rightbar">
+            <!-- 在这里添加右侧信息栏的HTML -->
+            <div id="weather-container">
+			<h2>当前天气</h2>
+			<p id="weather-description"></p>
+			<p>温度: <span id="temperature"></span>°C</p>
+			<p>湿度: <span id="humidity"></span>%</p>
+    		</div>
+        </aside>
+        </div>
+	<script src="weather.js"></script>
+   </body>
+   </html>     

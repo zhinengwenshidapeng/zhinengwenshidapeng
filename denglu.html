@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>登录/注册</title>
+    <link rel="stylesheet" href="denglu.css">
+</head>
+
+<body>
+	<div id="box">
+		<form>
+			<div id="box1">
+				<h2>立即注册</h2>
+				登录账号<br>
+				<input type="text" id="id" placeholder="请输入登录时将输入的账户"><br><br>
+				用户名<br>
+				<input type="text" name="username" id="user" placeholder="用户名长度不能超过5位数"><br><br>
+				邮箱<br>
+				<input type="text" name="mailbox" id="email" placeholder="请输入正确格式的邮箱" onchange="jd()"><br><br>
+				性别<br>
+				<input type="radio" name="gender" value="male" style="width: 30px;" checked>男
+				<input type="radio" name="gender" value="female" style="width: 30px;">女<br><br>
+				<center>头像<br>
+				<input type="file" name="photo" style="text-decoration: underline;"><br><br></center>
+				密码<br>
+				<input type="password" name="password" id="password" placeholder="密码长度至少6位数"
+					onchange="p.onchange()"><br><br>
+				确认密码<br>
+				<input type="password" name="psd" id="que" placeholder="两次密码必须一致"><br><br>
+				<button id="btn1" onclick="zhuce()">注册</button>
+				<button id="btn2">去登录</button>
+				<a href="shouye.html">返回首页</a>
+			</div>
+		</form>
+	</div>
+</body>
+<script src="jquery-1.11.3.min.js"></script>
+<script src="denglu.js"></script>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据分析</title>
+	<link rel="stylesheet" href="muban.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>智能温室管理系统</h1>
+            <nav>
+                <a href="shezhi1.html">登录/注册</a>
+                <a href="bangzhu.html">帮助</a>
+            </nav>
+        </header>
+        <aside class="sidebar">
+            <ul>
+				<li><a href="shouye.html">首页</a></li>
+                <li><a href="huanjing.html">环境监控</a></li>
+                <li><a href="kongzhi.html">自动控制</a></li>
+                <li><a href="shuju.html">数据分析</a></li>
+            </ul>
+        </aside>
+        <div id="environment-data">
+        <h2>环境数据</h2>
+        <div id="data-display">
+            <!-- 数据将显示在这里 -->
+        </div>
+    </div>
+        <aside class="rightbar">
+            <!-- 在这里添加右侧信息栏的HTML -->
+            <div id="weather-container">
+			<h2>当前天气</h2>
+			<p id="weather-description"></p>
+			<p>温度: <span id="temperature"></span>°C</p>
+			<p>湿度: <span id="humidity"></span>%</p>
+    		</div>
+        </aside>
+    </div>
+	<script src="weather.js"></script>
+	<script src="shuju.js"></script>
+	<script src="jquery-1.11.3.min.js"></script>
+	</body>
+</html>
